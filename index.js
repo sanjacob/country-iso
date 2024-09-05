@@ -8,7 +8,7 @@ try {
   const country = countries[name];
 
   const iso2 = countries.getAlpha2Code(name, locale);
-  const iso3 = countries.getAlpha2Code(name, locale);
+  const iso3 = countries.getAlpha3Code(name, locale);
 
   core.setOutput("iso-2", iso2);
   core.setOutput("iso-3", iso3);

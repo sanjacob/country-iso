@@ -13,6 +13,12 @@ inputs:
     required: true
     default: 'en'
 
+outputs:
+  iso-2:
+    description: 'ISO 3166-1 alpha-2 country code'
+  iso-3:
+    description: 'ISO 3166-1 alpha-3 country code'
+
 runs:
   using: 'node20'
   main: 'index.js'
