@@ -5,11 +5,8 @@
 
 ### `name`
 
-**Required** The name of the country.
+**Required** The name of the country, either in English or native.
 
-### `locale`
-
-**Required** The locale for the name provided. By default `en`.
 
 ## Outputs
 
@@ -20,6 +17,19 @@ ISO 3166-1 alpha-2 Code for the country entered.
 ### `iso-3`
 
 ISO 3166-1 alpha-3 Code for the country entered.
+
+### `name`
+
+Official name of the country in English.
+
+### `native`
+
+Official name of the country in its own official language.
+
+### `continent`
+
+Continent code of the country.
+
 
 ## Notes
 

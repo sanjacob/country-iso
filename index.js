@@ -4,10 +4,9 @@ const countries = require('countries-list');
 
 try {
   const name = core.getInput('name').toLowerCase();
-  const locale = core.getInput('locale').toLowerCase();
 
   const iso2 = countries.getCountryCode(name);
-  const data = countries.getCountryData(code);
+  const data = countries.getCountryData(iso2);
 
   core.setOutput("iso-2", iso2);
   core.setOutput("iso-3", data.iso3);
